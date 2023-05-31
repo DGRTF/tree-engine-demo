@@ -19,6 +19,7 @@
 .inner-elements {
   background-color: rgb(112, 40, 40);
   display: flex;
+  align-items: start;
   transition: background-color 2s;
 }
 
