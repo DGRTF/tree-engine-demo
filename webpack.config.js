@@ -1,10 +1,6 @@
 import path from 'path';
-import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import TerserPlugin from 'terser-webpack-plugin';
-import Dotenv from 'dotenv-webpack';
 import { fileURLToPath } from 'url';
-import CopyPlugin from 'copy-webpack-plugin';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -43,25 +39,6 @@ export default (env, options) => {
 					test: /\.css$/,
 					use: ['style-loader', 'css-loader'],
 				},
-				// {
-				// 	test: /\.(ttf|woff|woff2|eot)$/,
-				// 	loader: 'file-loader',
-				// 	options: {
-				// 		name: '[name].[ext]',
-				// 		outputPath: 'fonts',
-				// 		publicPath: `${rootDirectory}/fonts`,
-				// 	},
-				// },
-				// {
-				// 	test: /\.(svg|jpeg|jpg)$/,
-				// 	include: [path.join(__dirname, 'src/assets')],
-				// 	loader: 'file-loader',
-				// 	options: {
-				// 		name: '[name].[ext]',
-				// 		outputPath: 'img',
-				// 		publicPath: `${rootDirectory}/img`,
-				// 	},
-				// },
 			],
 		},
 		resolve: {
@@ -80,15 +57,6 @@ export default (env, options) => {
 			open: true,
 		},
 		plugins: [
-			// new webpack.CleanPlugin(),
-			// new Dotenv({
-			// 	path: path.resolve(__dirname, `./.env.${options.mode}`),
-			// }),
-			// new CopyPlugin({
-			// 	patterns: [
-			// 		{ from: "./src/data", to: "./data" },
-			// 	],
-			// }),
 			new HtmlWebpackPlugin({
 				template: './public/index.html',
 			}),
