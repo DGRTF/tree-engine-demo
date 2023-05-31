@@ -1,0 +1,29 @@
+.App {
+	font-size: 1rem;
+	background-color: #4d4d4d;
+	min-height: 100vh;
+}
+
+button {
+	background-color: #3c3c3c;
+	border: none;
+	height: 2em;
+	margin: .5em;
+}
+
+input {
+	height: 2em;
+	margin: .5em;
+}
+
+input,
+textarea {
+	background-color: #3c3c3c;
+	border: none;
+	padding: 0 .5em 0 .5em;
+}
+
+* {
+	box-sizing: border-box;
+	color: #d4d4d4;
+}

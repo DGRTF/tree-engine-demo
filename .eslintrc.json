@@ -1,0 +1,106 @@
+{
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ],
+        "moduleDirectory": [
+          "node_modules",
+          "src/"
+        ]
+      }
+    }
+  },
+  "ignorePatterns": [
+    "src/api/**",
+    "src/**/*.scss"
+  ],
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "airbnb"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaVersion": 2020,
+    "ecmaFeatures": {
+      "tsx": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "linebreak-style": [
+      "error",
+      "windows"
+    ],
+    "react/jsx-filename-extension": [
+      2,
+      {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    ],
+    "import/extensions": "off",
+    "no-use-before-define": [
+      "off",
+      {
+        "functions": false,
+        "classes": false
+      }
+    ],
+    "react/destructuring-assignment": [
+      "error",
+      "never"
+    ],
+    "react/button-has-type": [
+      "warn",
+      {
+        "button": true,
+        "submit": false,
+        "reset": false
+      }
+    ],
+    "no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "args": "after-used",
+        "ignoreRestSiblings": false
+      }
+    ],
+    "import/no-unresolved": "off",
+    "class-methods-use-this": "off",
+    "react/jsx-props-no-spreading": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "implicit-arrow-linebreak": [
+      "off",
+      "beside"
+    ],
+    "operator-linebreak": [
+      "off",
+      "after"
+    ],
+    "function-paren-newline": [
+      "off",
+      "never"
+    ],
+    "no-undef": "off"
+  }
+}
