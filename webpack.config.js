@@ -84,11 +84,11 @@ export default (env, options) => {
 			// new Dotenv({
 			// 	path: path.resolve(__dirname, `./.env.${options.mode}`),
 			// }),
-			new CopyPlugin({
-				patterns: [
-					{ from: "./src/data", to: "./data" },
-				],
-			}),
+			// new CopyPlugin({
+			// 	patterns: [
+			// 		{ from: "./src/data", to: "./data" },
+			// 	],
+			// }),
 			new HtmlWebpackPlugin({
 				template: './public/index.html',
 			}),
