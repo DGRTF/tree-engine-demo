@@ -1,3 +1,10 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #d4d4d4;
+}
+
 .App {
 	font-size: 1rem;
 	background-color: #4d4d4d;
@@ -21,15 +28,4 @@ textarea {
 	background-color: #3c3c3c;
 	border: none;
 	padding: 0 .5em 0 .5em;
-}
-
-* {
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-}
-
-* {
-	box-sizing: border-box;
-	color: #d4d4d4;
 }

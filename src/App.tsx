@@ -58,7 +58,7 @@ export default function App() {
         {/*@ts-ignore */}
         <Routes>
           {/*@ts-ignore */}
-          <Route path="/" element={<Layout />}>
+          <Route path="tree-engine-demo/" element={<Layout />}>
             {/*@ts-ignore */}
             <Route path={treePath} element={<>
               <div>
@@ -101,7 +101,7 @@ const Layout = () => {
         <ul>
           <li>
             {/*@ts-ignore */}
-            <Link to={`/${treePath}`}>Tree</Link>
+            <Link to={`/tree-engine-demo/${treePath}`}>Tree</Link>
           </li>
         </ul>
       </nav >
