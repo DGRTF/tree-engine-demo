@@ -10,7 +10,7 @@ let devTool = 'eval-source-map';
 
 export default (env, options) => {
 	if (options.mode === 'production') {
-		rootDirectory = '';
+		rootDirectory = './';//'tree-engine-demo';
 		devTool = undefined;
 	}
 
